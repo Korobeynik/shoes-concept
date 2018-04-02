@@ -1,5 +1,6 @@
 $(function() {
 
-	// Custom JS
+	// Mask for phone
+	$("#phone").mask("+380(99) 999-9999");
 
 });
