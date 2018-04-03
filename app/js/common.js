@@ -60,6 +60,7 @@ $(function() {
 			data: th.serialize()
 		}).done(function() {
 			$.magnificPopup.close();
+			//$('.send-mesages').magnificPopup();
 			$(".send-message").css('display', 'block');
 			setTimeout(function() {
 				$(".send-message").css('display', 'none');

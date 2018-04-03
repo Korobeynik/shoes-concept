@@ -14,6 +14,65 @@
 
 // ≥576px
 +media-breakpoint-down(xs)
+	html,body
+		overflow-x: hidden
+	.flex-grid
+	.hero
+		background-image: url(../img/mobile-hero.jpg)
+		background-position:  center
+		min-height: 450px
+	.hero__composition
+		min-height: 450px	
+	.hero__text
+		font-family: 'Bebas Neue Book'
+		text-align: center
+		font-size: 20px
+		line-height: 30px
+		margin: 0 auto
+		width: 100%
+		margin-bottom: 30px
+	.base-form
+		text-align: center 
+		input
+			margin-right: 0
+			margin-bottom: 10px			
+	.company-description
+		display: none
+	.phones a
+		font-size: 15px
+	.main-title
+		font-size: 33px
+		text-align: center
+		line-height: 40px
+	.advantages__list li:before
+		width: 22px
+		height: 22px
+		font-size: 17px
+		line-height: 22px
+		left: -33px
+	.advantages__list
+		padding-left: 30px
+		li
+			font-size: 13px
+			margin-bottom: 20px
+	.advantages__row
+		padding: 50px 0 220px 0
+		background-position: 100% 100%
+		background-size: 100%
+		padding-top: 0
+	.base-title
+		font-size: 25px
+	.base-title span:before
+	  position: absolute
+	  left: -18px
+	  top: -2px
+	  content: ""
+	  width: 40px
+	  height: 40px
+	  background-color: #321e15
+	  -webkit-border-radius: 50%
+	  border-radius: 50%
+	  z-index: -1									
 
 
 /*==========  Mobile First  ==========*/
