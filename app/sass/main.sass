@@ -126,6 +126,64 @@ header
 
 .catalog
 	padding-top: 130px
+	.base-title
+		margin-bottom: 5%
+
+.product__grid
+	> .row
+			margin-bottom: 60px
+			background-image: url(../img/circle-bg-left.png)
+			background-repeat: no-repeat
+			background-position: 58% 50%
+			&:nth-child(2n)
+				flex-direction: row-reverse
+				background-image: url(../img/circle-bg.png)
+				background-repeat: no-repeat
+				background-position: 43% 50%
+
+.product__gallery
+	img
+		display: inline-block
+		max-width: 100%
+		width: 100%
+		height: 100%	
+
+.product__table
+	margin-bottom: 20px
+
+.product__info
+	padding: 0 5%
+	padding-top: 20px
+
+.info__value
+	span
+		display: inline-block
+		padding: 2px 4px
+		border-radius: 3px
+		background-color: #f7f6f6
+		margin: 1px
+		margin-bottom: 2px	
+
+.info__item
+	display: flex
+	letter-spacing: -1px
+	font-size: 18px
+	color: $black
+	> div
+		width: 50%
+
+.product__descr
+	text-align: center
+
+.product__price
+	color: $black
+	display: block
+	text-align: center
+	font-size: 30px
+	font-weight: 400
+	margin-left: 6px		
+
+
 
 
 @import "media" // Always at the end

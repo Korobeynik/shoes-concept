@@ -14,7 +14,7 @@ body
 	position: relative
 	line-height: 1.65
 	font-family: 'Helvetica LT Std'
-	overflow-x: hidden
+	//overflow-x: hidden
   color: $black
 	input, textarea
 		border: #666 1px solid
@@ -23,8 +23,7 @@ body
 			border-color: red
 		&:required:valid
 			border-color: green
-// .container
-//   max-width: 1170px
+
 .img-responsive
 	display: block
 	max-width: 100%
@@ -37,6 +36,10 @@ body
 
 b, strong
 	font-weight: bold
+
+a
+	&:focus
+		outline: none
 
 ul
 	padding: 0
@@ -128,4 +131,64 @@ section
 .button--white
 	background-color: #fff
 	color: $black
-	font-size: 24px			        
+	font-size: 24px	
+
+.p-0
+	padding: 0
+
+.pr-0
+	padding-right: 0
+.pl-0
+	padding-left: 0
+
+.mb-20
+	margin-bottom: 20px
+.mb-15
+	margin-bottom: 15px
+
+
+//Gallery animation 
+.mfp-ready .mfp-figure
+  opacity: 0
+
+.mfp-zoom-in
+  .mfp-figure, .mfp-iframe-holder .mfp-iframe-scaler
+    opacity: 0
+    -webkit-transition: all 0.3s ease-out
+    transition: all 0.3s ease-out
+    -webkit-transform: scale(0.95)
+    -ms-transform: scale(0.95)
+    transform: scale(0.95)
+  &.mfp-bg, .mfp-preloader
+    opacity: 0
+    -webkit-transition: all 0.3s ease-out
+    transition: all 0.3s ease-out
+  &.mfp-image-loaded .mfp-figure
+    opacity: 1
+    -webkit-transform: scale(1)
+    -ms-transform: scale(1)
+    transform: scale(1)
+  &.mfp-ready
+    .mfp-iframe-holder .mfp-iframe-scaler
+      opacity: 1
+      -webkit-transform: scale(1)
+      -ms-transform: scale(1)
+      transform: scale(1)
+    &.mfp-bg, .mfp-preloader
+      opacity: 0.8
+  &.mfp-removing
+    .mfp-figure, .mfp-iframe-holder .mfp-iframe-scaler
+      -webkit-transform: scale(0.95)
+      -ms-transform: scale(0.95)
+      transform: scale(0.95)
+      opacity: 0
+    &.mfp-bg, .mfp-preloader
+      opacity: 0
+
+.mfp-iframe-scaler
+  overflow: visible
+
+.mfp-zoom-out-cur
+  cursor: auto
+  .mfp-image-holder .mfp-close
+    cursor: pointer								        
