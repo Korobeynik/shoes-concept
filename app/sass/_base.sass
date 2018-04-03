@@ -38,9 +38,94 @@ body
 b, strong
 	font-weight: bold
 
+ul
+	padding: 0
+	margin: 0
+	li
+		list-style-type: none
+
 .title-font
   font-family: 'Bebas Neue'
   text-transform: uppercase
 
+section
+	padding: 20px 0
+
 .base-title
-  @extend .title-font      
+	font-size: 36px
+	text-transform: uppercase
+	font-family: 'Bebas Neue'
+	padding: 25px 0
+	text-align: center
+	span
+		display: inline-block
+		position: relative
+		&:before
+			position: absolute
+			left: -49px
+			top: -15px
+			content: ""
+			width: 80px
+			height: 80px
+			background-color: $dark
+			border-radius: 50%
+			z-index: -1
+	i
+		font-style: normal
+		color: #fff
+
+.base-form
+	input
+		font-size: 16px
+		line-height: 20px
+		font-weight: 700
+		max-width: 270px
+		width: 100%
+		box-sizing: border-box
+		padding: 13px 0
+		border-radius: 10px
+		border: none
+		color: #fff
+		background-color: transparent
+		border: 2px solid #ffffff
+		margin-right: 30px
+		display: inline-block
+		@extend .type-style
+		padding-left: 60px
+		&.name
+			background-image: url(../img/icon-person.png)
+			background-repeat: no-repeat
+			background-position: 8% 50%
+		&.phone
+			background-image: url(../img/icon-phone.png)
+			background-repeat: no-repeat
+			background-position: 8% 50%	
+
+.button
+	color: #ffffff
+	font-size: 18px
+	line-height: 20px
+	font-weight: 700
+	max-width: 270px
+	padding: 15px 0
+	width: 100%
+	border-radius: 10px
+	background-color: $dark-brown
+	border: none
+	display: inline-block
+	transition: all 0.4s ease
+	text-align: center
+	&:hover
+		cursor: pointer
+		background-color: darken($dark-brown, 5%)
+		color: #fff
+		text-decoration: none
+	&:focus,&:active
+		outline: none
+		color: #ffffff
+		text-decoration: none
+
+.button--white
+	background-color: #fff
+	color: $black
+	font-size: 24px			        
