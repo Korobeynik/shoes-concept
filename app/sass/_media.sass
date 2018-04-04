@@ -8,6 +8,154 @@
 
 // ≥992px
 +media-breakpoint-down(md)
+	html,body
+		overflow-x: hidden
+	.flex-grid
+	.hero
+		background-image: url(../img/mobile-hero.jpg)
+		background-position:  center
+		min-height: 450px
+	.hero__composition
+		min-height: 450px	
+	.hero__text
+		font-family: 'Bebas Neue Book'
+		text-align: center
+		font-size: 20px
+		line-height: 30px
+		margin: 0 auto
+		width: 100%
+		margin-bottom: 30px
+	.base-form
+		text-align: center 
+		input
+			margin-right: 0
+			margin-bottom: 10px			
+	.company-description
+		display: none
+	.phones a
+		font-size: 15px
+	.main-title
+		font-size: 33px
+		text-align: center
+		line-height: 40px
+	.advantages__list li:before
+		width: 22px
+		height: 22px
+		font-size: 17px
+		line-height: 22px
+		left: -33px
+	.advantages__list
+		padding-left: 30px
+		li
+			font-size: 13px
+			margin-bottom: 20px
+	.advantages__row
+		padding: 50px 0 220px 0
+		background-position: 100% 100%
+		background-size: 100%
+		padding-top: 0
+	.base-title
+		font-size: 25px
+	.base-title span:before
+	  position: absolute
+	  left: -18px
+	  top: -2px
+	  content: ""
+	  width: 40px
+	  height: 40px
+	  background-color: #321e15
+	  -webkit-border-radius: 50%
+	  border-radius: 50%
+	  z-index: -1
+	.order
+		background-color: $dark-brown
+		background-image: none
+		padding: 55px 0
+		margin-top: 40px  
+	.order__content
+		text-align: center
+	.order__text
+		font-size: 25px
+		line-height: 30px
+		text-align: center
+		margin: 0 auto
+		margin-bottom: 20px
+	.catalog
+		padding-top: 30px
+	.product__gallery
+		.mb-20
+			margin-bottom: 10px
+	.product__info
+		padding-top: 0
+	.product__table
+		margin-bottom: 0
+		.info__item
+			&:nth-child(2)
+				display: none
+		.mobile__size
+			display: flex		
+	.info__item
+		font-size: 10px
+		line-height: 11px
+		letter-spacing: 0
+	.product__price
+		font-size: 22px
+	.product__descr
+		.button
+			font-size: 14px
+			line-height: 16px
+			padding: 7px 0
+	.product__grid>.row
+		background-position: 58% 21%
+		background-size: 20%
+		background-image: none
+	.product__gallery
+		background-color: #fff
+	.product__grid>.row:nth-child(2n)
+		background-image: none
+		.col-md-12.p-0.mb-20
+			padding-right: 15px
+		.col-md-12.p-0
+			padding-right: 15px
+	.product__grid>.row
+		margin-bottom: 20px
+	.photos
+		padding-top: 0
+		background-image: none
+		.row.mb-20
+			.col-6:nth-child(1)
+				padding-right: 10px
+			.col-6:nth-child(2)
+				padding-left: 10px	
+		.product__gallery .mb-20
+			margin-bottom: 15px 
+		.base-title
+			padding-top: 0
+			padding-bottom: 0
+	.photos__grid
+		.product__gallery
+	    flex-direction: column-reverse
+	.contact
+		background-image: url(../img/contact-bg-mobile.jpg)
+		padding-bottom: 30px
+	.contact .base-title
+		padding: 25px 0	
+	.contact__item
+		text-align: center
+		margin-bottom: 30px
+	.contact__item.contact__item-last
+		padding-left: 30px
+		text-align: left	
+	.contact__item__title
+		font-size: 23px
+		margin-bottom: 5px
+	footer
+		padding: 35px 0
+		.flex-grid
+			flex-wrap: wrap
+		.logo
+			margin: auto
+			margin-bottom: 20px	
 
 // ≥768px
 +media-breakpoint-down(sm)
@@ -95,6 +243,8 @@
 		.info__item
 			&:nth-child(2)
 				display: none
+		.mobile__size
+			display: flex		
 	.info__item
 		font-size: 10px
 		line-height: 11px
