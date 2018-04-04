@@ -61,9 +61,9 @@ $(function() {
 		}).done(function() {
 			$.magnificPopup.close();
 			//$('.send-mesages').magnificPopup();
-			$(".send-message").css('display', 'block');
+			$(".send-mesages").css('display', 'block');
 			setTimeout(function() {
-				$(".send-message").css('display', 'none');
+				$(".send-mesages").css('display', 'none');
 				th.trigger("reset");
 			}, 3000);
 			// setTimeout(function() {
