@@ -1,7 +1,6 @@
 $(function() {
 
 	changeImageSrc();
-	checkAdmin();
 
 	function changeImageSrc() {
 		$(".product__gallery img").each( function() {
@@ -10,26 +9,8 @@ $(function() {
 		});
 	};
 
-	// function checkAdmin() {
-	// 	let htmlId = $("html").attr("id");
-	// 	if(htmlId == "d") {
-	// 		console.log("Is admin");
-	// 	} else {
-	// 		console.log("Not admin");
-	// 	}
-	// };
-
-	function checkAdmin() {
-		//let htmlId = $("html").attr("id");
-		if($(window).find("html").attr("id","d")) {
-			console.log("Is admin");
-		} else {
-			console.log("Not admin");
-		}
-	};
-
   // Mask for phone
-  $("#phone, #phone_2").mask("+380(99) 999-9999");
+  $("#phone, #phone_2").mask("+38(099) 999-9999");
 
 	$('.button--buy, .button--white').addClass('popup');
 	$('.button--buy, .button--white').attr('href', '#form');
@@ -75,7 +56,7 @@ $(function() {
 		var th = $(this);
 		$.ajax({
 			type: "POST",
-			url: "/mail.php",
+			url: "mail.php",
 			data: th.serialize()
 		}).done(function() {
 			$.magnificPopup.close();

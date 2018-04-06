@@ -38,7 +38,6 @@ gulp.task('js', function() {
     return gulp.src([
             'app/libs/jquery/dist/jquery.min.js',
             'app/libs/maskphone/mask.js',
-            'app/libs/lightgallery/lightgallery.min.js',
             'app/libs/magnific/jquery.magnific-popup.min.js',
             'app/js/common.js', // Always at the end
         ])
